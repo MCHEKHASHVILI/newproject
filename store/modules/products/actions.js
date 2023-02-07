@@ -1,9 +1,9 @@
 const actions = {
-    addItemToCart(context, payload){
-        context.commit('ADD_ITEM_TO_CART', payload)
+    addItemToCart({ commit }, payload){
+        commit('ADD_ITEM_TO_CART', payload)
     },
-    removeItemFromCart(context, payload){
-        context.commit('REMOVE_ITEM_FROM_CART', payload)
+    removeItemFromCart({ commit }, payload){
+        commit('REMOVE_ITEM_FROM_CART', payload)
     }
 }
 
