@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
-import buttonsModule from './modules/buttons'
-import productsModule from './modules/products'
+import mainPlugin from './plugins/mainPlugin'
 
 const store = createStore({
     state(){
@@ -8,7 +7,7 @@ const store = createStore({
             anotherData: []
         }
     },
-    modules: [ productsModule, buttonsModule ]
+    plugins: [ mainPlugin ],
 })
 
 export default store
