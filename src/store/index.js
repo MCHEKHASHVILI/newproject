@@ -1,13 +1,9 @@
 import { createStore } from 'vuex'
 import mainPlugin from './plugins/mainPlugin'
+import menuPlugin from './plugins/menuPlugin'
 
 const store = createStore({
-    state(){
-        return {
-            anotherData: []
-        }
-    },
-    plugins: [ mainPlugin ],
+    plugins: [ mainPlugin, menuPlugin ],
 })
 
 export default store

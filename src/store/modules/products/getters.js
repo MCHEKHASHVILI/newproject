@@ -4,6 +4,9 @@ const getters = {
     },
     getCartObject(state){
         return state.cart
+    },
+    getActiveProduct(state){
+        return state.activeProduct
     }
 }
 

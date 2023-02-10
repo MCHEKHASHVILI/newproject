@@ -5,17 +5,17 @@ export default function mainPlugin(store){
     
     store.subscribe((mutation, state) => {
 
-        console.log(mutation, state)
+        // console.log(mutation, state)
       // called after every mutation.
       // The mutation comes in the format of `{ type, payload }`.
     })
 
     store.subscribeAction({
         before: (action, state) => {
-          console.log(`before action ${action.type}`)
+          // console.log(`before action ${action.type}`)
         },
         after: (action, state) => {
-          console.log(`after action ${action.type}`)
+          // console.log(`after action ${action.type}`)
         }
       })
 

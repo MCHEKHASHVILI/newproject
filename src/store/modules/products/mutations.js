@@ -15,7 +15,10 @@ const mutations = {
         state.cart.data.splice(state.cart.data.indexOf(product),1)
         /** დავამატოთ პროდუქტებში */
         state.products.data.push(product)
-    },  
+    }, 
+    GET_PRODUCT_BY_ID(state, payload){
+        state.activeProduct = state.products.data.find(item => item.id === +payload)
+    }
 }
 
 export default mutations
